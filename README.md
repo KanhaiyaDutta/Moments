@@ -1,6 +1,6 @@
 # moments
 
-A new Flutter project.
+A Video Call App implemented using WebRTC and Socket.io.
 
 ## Getting Started
 
