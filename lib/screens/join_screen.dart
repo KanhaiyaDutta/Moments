@@ -58,7 +58,8 @@ class _JoinScreenState extends State<JoinScreen> {
         title: const Text('Moments Call'),
       ),
       body: SafeArea(
-        child: Stack(children: [
+        child: Stack(
+          children: [
           Center(
             child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.9,
@@ -83,6 +84,7 @@ class _JoinScreenState extends State<JoinScreen> {
                   TextField(
                     controller: _controller,
                     textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       hintText: "Remote Caller ID",
                       alignLabelWithHint: true,
@@ -118,7 +120,7 @@ class _JoinScreenState extends State<JoinScreen> {
               ),
             ),
           ),
-          if (incomingSDPOffer! - null)
+          if (incomingSDPOffer != null)
             Positioned(
               child: ListTile(
                 title:
